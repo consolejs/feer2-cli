@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "dependencies": {
+    "cross-spawn": "^6.0.5",
+    "svg-term": "^1.1.7"
+  },
+  "devDependencies": {
+    "address": "^1.1.2",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "pre-commit": "^1.2.2"
+  },
+  "scripts": {
+    "eslint": "eslint scripts/ --ext .js --cache",
+    "term2svg": "cd scripts && node term2svg.js"
+  },
+  "pre-commit": [
+    "eslint"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "feer-cli",
+  "version": "0.3.2",
+  "description": "Fast initialize the Feer.",
+  "main": "index.js",
+  "bin": {
+    "feer": "./bin/feer-init.js"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/consolejs/feer-cli.git"
+  },
+  "keywords": [
+    "rollupjs",
+    "front-end",
+    "build-tools"
+  ],
+  "author": "Vincent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/consolejs/feer-cli/issues"
+  },
+  "homepage": "https://github.com/consolejs/feer-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^6.0.1",
+    "inquirer": "^5.2.0",
+    "address": "^1.1.2"
+  }
+}
