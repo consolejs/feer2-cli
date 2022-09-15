@@ -1,18 +1,20 @@
 {
-  "name": "feer-cli",
-  "version": "0.3.2",
-  "description": "Fast initialize the Feer.",
+  "name": "feer2",
+  "version": "2.0.6",
+  "description": "Fast initialize the new Feer.",
   "main": "index.js",
   "bin": {
-    "feer": "./bin/feer-init.js"
+    "feer2": "./bin/feer-init.js"
   },
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/consolejs/feer-cli.git"
+    "url": "git+https://github.com/consolejs/feer2-cli.git"
   },
   "keywords": [
-    "rollupjs",
+    "webpack",
+    "react",
+    "vite",
     "front-end",
     "build-tools"
   ],

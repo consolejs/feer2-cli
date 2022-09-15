@@ -21,22 +21,22 @@ module.exports = (type) => {
 
       // Rename gitignore after the fact to prevent npm from renaming it to .gitignore
       // See: https://github.com/npm/npm/issues/1862
-      try {
-        fs.moveSync(
-          path.join(CWD, 'gitignore'),
-          path.join(CWD, '.gitignore'),
-          []
-        );
-      } catch (error) {
-        // Append if there's already a `.gitignore` file there
-        if (error.code === 'EEXIST') {
-          const data = fs.readFileSync(path.join(CWD, 'gitignore'));
-          fs.appendFileSync(path.join(CWD, '.gitignore'), data);
-          fs.unlinkSync(path.join(CWD, 'gitignore'));
-        } else {
-          throw error;
-        }
-      }
+      // try {
+      //   fs.moveSync(
+      //     path.join(CWD, 'gitignore'),
+      //     path.join(CWD, '.gitignore'),
+      //     []
+      //   );
+      // } catch (error) {
+      //   // Append if there's already a `.gitignore` file there
+      //   if (error.code === 'EEXIST') {
+      //     const data = fs.readFileSync(path.join(CWD, 'gitignore'));
+      //     fs.appendFileSync(path.join(CWD, '.gitignore'), data);
+      //     fs.unlinkSync(path.join(CWD, 'gitignore'));
+      //   } else {
+      //     throw error;
+      //   }
+      // }
 
       console.log('\nInit template success! ✨\n');
       resolve();

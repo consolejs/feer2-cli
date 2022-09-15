@@ -28,8 +28,9 @@ program
 
 if (!projectName) {
   error('\nPlease enter the project name: \n');
+  error('\n请输入项目名称: \n');
   log(
-    `Such as: ${chalk.cyan(program.name())} ${chalk.green('feer-app')}\n`
+    `Such as: ${chalk.cyan(program.name())} ${chalk.green('feer-init')}\n`
   );
   process.exit(1);
 }
@@ -68,16 +69,16 @@ function selectAppType() {
     message: 'Which type do you want to create?',
     choices: [
       {
-        name: `${chalk.hex('#DF7782')('PC')} - (build the pc page)`,
-        value: 'feer-pc'
+        name: `${chalk.hex('#DF7782')('es')} - (base es)`,
+        value: 'feer-es'
       },
       {
-        name: `${chalk.hex('#8bc24c')('H5')} - (build the h5 page)`,
-        value: 'feer-h5'
+        name: `${chalk.hex('#8bc24c')('react')} - (base react)`,
+        value: 'feer-react'
       },
       {
-        name: `${chalk.hex('#f29c2b')('PC-multi')} - (build the pc multi-page)`,
-        value: 'feer-pc-multipage'
+        name: `${chalk.hex('#f29c2b')('vite')} - (base vite & react)`,
+        value: 'feer-vite'
       }
     ]
   }).then(a => {

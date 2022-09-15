@@ -1,15 +1,15 @@
-## feer-cli
+## feer2
 
-Fast initialize the  __`Feer`__. &ensp;🚀 
+Fast initialize the  __`Feer2`__. &ensp;🚀 
 
-**`Feer`** : Front-End Developer Integration. Fast built integrated tools based on [RollupJS](https://www.rollupjs.com/).
+**`Feer`** : Front-End Developer Integration.
 
 
 ### commander
 
 - global
 ```bash
-npm i feer-cli -g
+npm i feer2 -g
 ```
 - usage
 ```
@@ -17,6 +17,6 @@ feer <project-name>
 ```
 - or
 ```bash
-npx feer-cli <project-name>
+npx feer2 <project-name>
 ```
 
