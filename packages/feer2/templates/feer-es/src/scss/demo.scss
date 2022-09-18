@@ -1,8 +1,24 @@
+html,
 body {
-  background: $body-background-color;
+    height: 100%;
+}
+
+body {
+  background-color: $body-background-color;
+  background: linear-gradient(45deg, #000850 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #FF7A00 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+  background-blend-mode: screen, overlay, hard-light, normal;
   color: $foreground-color;
   font-family: "PingFangSC-Regular","\5FAE\8F6F\96C5\9ED1", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.3em;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
 }
 
 header {
