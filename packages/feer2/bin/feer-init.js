@@ -28,7 +28,6 @@ program
 
 if (!projectName) {
   error('\nPlease enter the project name: \n');
-  error('\n请输入项目名称: \n');
   log(
     `Such as: ${chalk.cyan(program.name())} ${chalk.green('feer-init')}\n`
   );
@@ -69,15 +68,15 @@ function selectAppType() {
     message: 'Which type do you want to create?',
     choices: [
       {
-        name: `${chalk.hex('#DF7782')('es')} - (base es)`,
+        name: `${chalk.hex('#DF7782')('ES')} - (base es)`,
         value: 'feer-es'
       },
       {
-        name: `${chalk.hex('#8bc24c')('react')} - (base react)`,
+        name: `${chalk.hex('#8bc24c')('React')} - (base react)`,
         value: 'feer-react'
       },
       {
-        name: `${chalk.hex('#f29c2b')('vite')} - (base vite & react)`,
+        name: `${chalk.hex('#f29c2b')('Vite')} - (base vite & react)`,
         value: 'feer-vite'
       }
     ]
