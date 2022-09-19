@@ -1,0 +1,70 @@
+@function rem($px) {
+  @return $px / 16 / 3 * 1rem;
+}
+
+@media only screen and (max-width:320px) {
+  html,
+  body {
+      font-size: 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0 none;
+  outline: none;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+a,img,button,input,textarea,li{
+  -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  color: $font-color;
+  font-size: 1em;
+  line-height: 1;
+  font-family: "PingFangSC-Regular","\5FAE\8F6F\96C5\9ED1", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html,body{
+  height: 100%;
+}
+
+a {
+  color: $font-color;
+  text-decoration: none;
+}
+
+.cf:before,
+.cf:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+.ct {
+  text-indent: -999em;
+  text-align: left;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0
+}
