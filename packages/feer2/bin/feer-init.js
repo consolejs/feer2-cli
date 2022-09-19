@@ -68,15 +68,15 @@ function selectAppType() {
     message: 'Which type do you want to create?',
     choices: [
       {
-        name: `${chalk.hex('#DF7782')('ES')} - (base es)`,
+        name: `${chalk.hex('#DF7782')('ES')} - (base on the webpack & es)`,
         value: 'feer-es'
       },
       {
-        name: `${chalk.hex('#8bc24c')('React')} - (base react)`,
+        name: `${chalk.hex('#8bc24c')('React')} - (base on the webpack & react)`,
         value: 'feer-react'
       },
       {
-        name: `${chalk.hex('#f29c2b')('Vite')} - (base vite & react)`,
+        name: `${chalk.hex('#f29c2b')('Vite')} - (base on the vite & react)`,
         value: 'feer-vite'
       }
     ]
