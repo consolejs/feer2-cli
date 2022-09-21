@@ -1,6 +1,6 @@
 {
   "name": "feer2",
-  "version": "2.0.10",
+  "version": "2.1.1",
   "description": "Fast initialize the new Feer.",
   "main": "index.js",
   "bin": {

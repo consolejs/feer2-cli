@@ -4,7 +4,7 @@ module.exports = (config, { PATH }) => Object.assign(config, {
     static: {
       directory: join(PATH, 'public'),
     },
-    port: process.env.PORT || 50002,
+    port: process.env.PORT || 5000,
     open: true,
     server: process.env.HTTPS ? 'https' : 'http',
     // proxy https://webpack.docschina.org/configuration/dev-server/#devserverproxy
