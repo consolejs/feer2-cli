@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="telephone=no,email=no" name="format-detection" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
+    />
+    <title>活动</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: 0;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      html {
+        font-size: <%=100 / Number(process.env.DESIGN_WIDTH) * 100%>vw;
+        -webkit-text-size-adjust: none;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      body,
+      html {
+        height: 100%;
+        background-color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+    <style>
+      .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 999;
+      }
+
+      .cp-spinner {
+        width: 0.96rem;
+        height: 0.96rem;
+        box-sizing: border-box;
+        position: absolute;
+        font-size: 0.24rem;
+        text-align: center;
+        line-height: 0.96rem;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Helvetica Neue;
+      }
+
+      .cp-round:before {
+        border-radius: 50%;
+        content: ' ';
+        width: 0.96rem;
+        height: 0.96rem;
+        display: inline-block;
+        box-sizing: border-box;
+        border-top: solid 4px #eee;
+        border-right: solid 4px #eee;
+        border-bottom: solid 4px #eee;
+        border-left: solid 4px #eee;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.8;
+      }
+      .cp-round:after {
+        border-radius: 50%;
+        content: ' ';
+        width: 0.96rem;
+        height: 0.96rem;
+        display: inline-block;
+        box-sizing: border-box;
+        border-top: solid 4px #64aced;
+        border-right: solid 4px transparent;
+        border-bottom: solid 4px transparent;
+        border-left: solid 4px transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: cp-round-animate 0.8s ease-in-out infinite;
+      }
+
+      @keyframes cp-round-animate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <script
+      defer
+      src="https://jsapi.qq.com/get?api=qb.beacon,app.toast,app.share,app.getBrowserParam,app.showAlertDialog,env.qua2,env.platForm,login.refreshToken,login.getAccountInfo,login.showLoginPanel,file.saveImgToGallery,device.copy"
+    ></script>
+  </head>
+
+  <body>
+    <div class="loading" id="loading">
+      <div class="cp-spinner cp-round" id="loadingProgress">0%</div>
+    </div>
+    <div id="root"></div>
+    <script>
+      (function () {
+        var loading = document.getElementById('loading');
+        var loadingProgress = document.getElementById('loadingProgress');
+        function easeOut(t, b, c, d) {
+          return -c * (t /= d) * (t - 2) + b;
+        }
+        var t = 0;
+        var b = 0;
+        var c = 100;
+        var d = 60 * 3;
+        var step = function () {
+          // value 就是当前的位置值
+          var value = Math.floor(easeOut(t, b, c, d));
+          loadingProgress.innerHTML = value + '%';
+          t++;
+          if (t <= d) {
+            requestAnimationFrame(step);
+          } else {
+            loading.style.display = 'none';
+          }
+        };
+        step();
+      })();
+    </script>
+    <% if (process.env.NODE_ENV === 'development') { %>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.9.1/vconsole.min.js"></script>
+    <script>
+      new VConsole();
+    </script>
+    <% } %>
+  </body>
+</html>
