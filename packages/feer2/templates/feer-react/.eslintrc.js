@@ -22,9 +22,6 @@ module.exports = {
   rules: {
     '@typescript-eslint/naming-convention': 'off',
     // 'react-hooks/exhaustive-deps': 'off',
-  },
-  globals: {
-    qb_bridge: true,
-    browser: true,
+    "max-line-length": 0, // 0 = off, 1 = warn, 2 = erro
   },
 };
