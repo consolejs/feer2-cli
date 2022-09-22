@@ -65,5 +65,3 @@ package-lock.json
 .DS_Store
 
 _test
-
-packages/feer2/templates/feer-vite
