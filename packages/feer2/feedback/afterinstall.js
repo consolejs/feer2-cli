@@ -12,6 +12,6 @@ module.exports = projectName => {
     `${chalk.cyan(`${projectName} installed success!`)}\r\n\r\n`,
     `${chalk.cyan('快速开始: 🚀 \r\n\r\n')}`,
     `${chalk.cyan(`  cd ${chalk.green(projectName)}\n`)}`,
-    `${chalk.green('  npm start')} 访问: \`http://${ip4}:4000\`\n`
+    `${chalk.green('  npm start')} 访问: \`http://${ip4}:5000\`\n`
   );
 };
