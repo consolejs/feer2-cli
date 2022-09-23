@@ -11,7 +11,7 @@ export default [
             routes: [
               {
                 path: '/',
-                redirect: '/hone',
+                redirect: '/home',
               },
               {
                 path: '/home',
