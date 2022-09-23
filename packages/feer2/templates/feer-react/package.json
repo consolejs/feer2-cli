@@ -16,7 +16,8 @@
     }
   ],
   "scripts": {
-    "start": "webpack serve --env development --progress",
+    "dev": "webpack serve --env development --progress",
+    "start": "npm run dev",
     "build": "npm run eslint:fix && npm run stylelint:fix && webpack --env production --progress",
     "eslint": "eslint --ext .jsx,.js,.ts,tsx ./ .webpack/ --max-warnings 0 --cache",
     "stylelint": "npx stylelint \"**/*.{css,scss,sass}\" --max-warnings 0 --cache",

@@ -69,6 +69,7 @@
     "watch": "webpack --config config/dev.js --mode=development --watch",
     "bundle": "npm install && npm run watch",
     "dev": "webpack serve --config config/dev.js --mode=development",
+    "start": "npm run dev",
     "production": "webpack --config config/prod.js --mode=production",
     "lint:sass": "sass-lint -v -q",
     "lint:js": "eslint --ext .js src/js/",
