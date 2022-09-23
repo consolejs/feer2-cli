@@ -76,7 +76,7 @@ function selectAppType() {
         value: 'feer-react'
       },
       {
-        name: `${chalk.hex('#f29c2b')('Vite')} - (base on the vite & react)`,
+        name: `${chalk.hex('#f29c2b')('Vite')} - (base on the vitejs & react)`,
         value: 'feer-vite'
       }
     ]
