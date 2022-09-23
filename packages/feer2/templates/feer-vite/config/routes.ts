@@ -11,12 +11,12 @@ export default [
             routes: [
               {
                 path: '/',
-                redirect: '/welcome',
+                redirect: '/hone',
               },
               {
-                path: '/welcome',
-                name: '欢迎页',
-                component: './pages/Welcome',
+                path: '/home',
+                name: '首页',
+                component: './pages/Home',
               },
             ],
           },

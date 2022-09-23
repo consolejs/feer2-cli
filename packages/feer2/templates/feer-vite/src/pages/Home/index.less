@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #960975 0%, #140020 100%),
+    radial-gradient(100% 225% at 100% 0%, #c528ff 0%, #000 100%),
+    linear-gradient(225deg, #f00 0%, #000 100%),
+    linear-gradient(
+      135deg,
+      #cddbff 10%,
+      #cdffeb 35%,
+      #009f9d 35%,
+      #009f9d 60%,
+      #07456f 60%,
+      #07456f 67%,
+      #0f0a3c 67%,
+      #0f0a3c 100%
+    );
+  background-blend-mode: screen, overlay, hard-light, normal;
+}
+
+.feer-logo {
+  height: 40vmin;
+  pointer-events: none;
+  zoom: 1.2;
+}
+
+.feer-edit {
+  padding-top: 10vmin;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: #c6b81c;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .feer-logo {
+    animation: feer-logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes feer-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.feer-btn {
+  font-size: calc(10px + 2vmin);
+  background: linear-gradient(214deg, #ff4193, #c834fe);
+}
