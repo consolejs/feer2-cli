@@ -1,0 +1,229 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/css-loader@6.7.1_webpack@5.74.0/node_modules/css-loader/dist/cjs.js!./node_modules/.pnpm/postcss-loader@7.0.1_qjv4cptcpse3y5hrjkrbb7drda/node_modules/postcss-loader/dist/cjs.js!./node_modules/.pnpm/sass-loader@13.0.2_sass@1.54.9+webpack@5.74.0/node_modules/sass-loader/dist/cjs.js!./src/scss/app.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/* Core variables */ /**
+ * Variables
+*/
+/* Typography */
+/* Breakpoints */
+/* Paths */
+/* Grid setup */
+/* Colour palette */
+/* Components */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 400;
+}
+
+details,
+figcaption,
+figure,
+menu {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+img {
+  display: block;
+  border: 0 none;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+b {
+  font-weight: 400;
+}
+
+/* CSS Base */
+@media only screen and (max-width: 320px) {
+  html,
+body {
+    font-size: 14px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0 none;
+  outline: none;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+a, img, button, input, textarea, li {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+html {
+  min-width: 320px;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  color: #ec1f4e;
+  font-size: 1em;
+  line-height: 1;
+  font-family: "PingFangSC-Regular", "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+a {
+  color: #ec1f4e;
+  text-decoration: none;
+}
+
+.cf:before,
+.cf:after {
+  content: ".";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+.ct {
+  text-indent: -999em;
+  text-align: left;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+/* CSS print */
+/**
+ * Print Stylesheet
+*/
+@media print {
+  @page {
+    margin: 1cm;
+  }
+  body {
+    background: #fff;
+    color: #000;
+  }
+  a {
+    page-break-inside: avoid;
+  }
+  blockquote {
+    page-break-inside: avoid;
+  }
+  table,
+pre {
+    page-break-inside: avoid;
+  }
+  ul, ol, dl {
+    page-break-before: avoid;
+  }
+}
+/* Fonts */
+/* Mixins, helpers and functions */
+/**
+ * Helper mixins
+*/
+/* Vendor */
+/* Components */
+/* Browser specific styles */
+/**
+ * Dirty hacks, yes internet explorer, we are looking at you
+*/
+/* Demo Page styles */
+html,
+body {
+  height: 100%;
+}
+
+.main {
+  background: linear-gradient(45deg, #960975 0%, #140020 100%), radial-gradient(100% 225% at 100% 0%, #c528ff 0%, #000000 100%), linear-gradient(225deg, #ff0000 0%, #000000 100%), linear-gradient(135deg, #cddbff 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
+  background-blend-mode: screen, overlay, hard-light, normal;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feer-logo {
+  height: 40vmin;
+  pointer-events: none;
+  zoom: 1.2;
+}
+
+.feer-edit {
+  padding-top: 10vmin;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: #c6b81c;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .feer-logo {
+    -webkit-animation: feer-logo-spin infinite 10s linear;
+            animation: feer-logo-spin infinite 10s linear;
+  }
+}
+@-webkit-keyframes feer-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes feer-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
