@@ -4,11 +4,9 @@
 
 # Feer
 
-**`Feer2`** 全新前端工具集成环境. &ensp;🚀 
+**`Feer2`** 全新前端工具集成环境. &ensp;🚀  &ensp;&ensp;[**English Docs**](./README_EN.md)
 
 > Feer2是[Feer](https://github.com/consolejs/feer-cli)的升级版，此命名灵感来自 **`F`** ront- **`E`** nd&ensp; Engine **`er`**, 即前端工程构建师 `FEer`, 类似`JAVAer` `PHPer`、
-
-[**English Document**](./README_EN.md)
 
 <p align='center'>
   <img src='./cli.svg' width='640' alt='yarn start'>
