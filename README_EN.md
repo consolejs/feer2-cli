@@ -6,7 +6,7 @@
 
 **`Feer2`** New front-end tool integration environment. &ensp;🚀 
 
-> The naming inspiration comes from **`F`** ront- **`E`** nd&ensp; Engine **`er`**, that is "FEer", &ensp;such as "JAVAer"、  "PHPer"
+> The naming inspiration comes from **`F`** ront- **`E`** nd&ensp; Engine **`er`**, that is "FEer", &ensp;such as "JAVAer"、 "PHPer"
 
 [**中文**](./README.md)
 
